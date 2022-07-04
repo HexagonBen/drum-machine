@@ -1,0 +1,63 @@
+.mainDiv {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn.pixabay.com/photo/2015/08/09/20/59/concert-882169_960_720.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 600px;
+    min-width: 320px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    grid-gap: 15px;
+    border-radius: 15px;
+    background-color: rgba(135, 206, 235, 0.85); 
+    border: 2px solid black;
+}
+
+.keyboard {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.drum-pad {
+    height: 5rem;
+    width: 5rem;
+    background-color: #db8012;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    font-size: 2rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+}
+
+@media only screen and (max-width: 840px) {
+.wrapper {
+    padding: 1rem;
+}
+
+    h3 {
+font-size: 1rem;
+}
+
+.drum-pad {
+font-size: 1rem;
+height: 3rem;
+width: 3rem;
+}
+}
